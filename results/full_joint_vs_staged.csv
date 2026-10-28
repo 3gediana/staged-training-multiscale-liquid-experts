@@ -1,0 +1,7 @@
+run_id,arm,seed,status,n_patients_used,epochs_done,final_train_loss,final_val_loss,val_adm_auroc,val_adm_auprc,val_hourly_auroc,val_hourly_auprc,test_adm_auroc,test_adm_auprc,test_hourly_auroc,test_hourly_auprc,total_sec,ms_per_batch_mean,grad_norm_e1_mean,grad_norm_e2_mean,grad_norm_e3_mean,grad_cos_e1_e2_mean,grad_cos_e1_e3_mean,grad_cos_e2_e3_mean,within_d9_cap_720s,lr
+full_A_seed0,A,0,done,2000,20,0.0791,0.0595,0.8458,0.2998,0.7451,0.0321,0.8286,0.2132,0.7999,0.0706,227.8,490.3,0.0130,0.0097,0.0195,-0.0075,0.0002,-0.0009,True,0.001
+full_A_seed1,A,1,done,2000,20,0.0793,0.0599,0.8214,0.2048,0.7386,0.0287,0.8176,0.2106,0.7964,0.0714,211.2,477.3,0.0064,0.0133,0.0307,0.0019,0.0025,-0.0049,True,0.001
+full_A_seed2,A,2,done,2000,20,0.0788,0.0594,0.8232,0.1823,0.7334,0.0300,0.8113,0.2411,0.7827,0.0720,223.0,504.2,0.0080,0.0171,0.0188,-0.0048,-0.0036,0.0023,True,0.001
+full_B_seed0,B,0,done,2000,20,0.0822,0.0622,0.7661,0.1266,0.7120,0.0255,0.8161,0.1853,0.7702,0.0526,111.8,251.2,None,0.0108,0.0209,None,None,0.0011,True,0.001
+full_B_seed1,B,1,done,2000,20,0.0817,0.0624,0.7696,0.1370,0.7018,0.0254,0.7587,0.1412,0.7605,0.0439,107.7,241.8,None,0.0125,0.0436,None,None,0.0005,True,0.001
+full_B_seed2,B,2,done,2000,20,0.0825,0.0633,0.7080,0.0982,0.6335,0.0170,0.7846,0.1700,0.7583,0.0417,108.9,244.6,None,0.0196,0.0376,None,None,-0.0001,True,0.001

@@ -1,0 +1,4 @@
+run_id,arm,seed,status,n_patients_used,epochs_done,final_train_loss,final_val_loss,val_adm_auroc,val_adm_auprc,val_hourly_auroc,val_hourly_auprc,test_adm_auroc,test_adm_auprc,test_hourly_auroc,test_hourly_auprc,total_sec,ms_per_batch_mean,grad_norm_e1_mean,grad_norm_e2_mean,grad_norm_e3_mean,grad_cos_e1_e2_mean,grad_cos_e1_e3_mean,grad_cos_e2_e3_mean,within_d9_cap_720s,lr
+full_BnoCal_seed0,BnoCal,0,done,2000,18,0.0810,0.0607,0.6597,0.0672,0.6738,0.0244,0.7494,0.1139,0.7695,0.0450,94.1,234.3,None,0.0108,0.0209,None,None,0.0011,True,0.001
+full_BnoCal_seed1,BnoCal,1,done,2000,18,0.0811,0.0606,0.6608,0.0796,0.6833,0.0229,0.7123,0.1002,0.7560,0.0381,95.1,236.2,None,0.0125,0.0436,None,None,0.0005,True,0.001
+full_BnoCal_seed2,BnoCal,2,done,2000,18,0.0816,0.0617,0.6021,0.0570,0.5822,0.0143,0.7127,0.0943,0.7440,0.0374,100.7,250.7,None,0.0196,0.0376,None,None,-0.0001,True,0.001

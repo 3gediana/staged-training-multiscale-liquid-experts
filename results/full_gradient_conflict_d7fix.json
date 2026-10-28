@@ -1,0 +1,640 @@
+{
+  "schema": "full-gradient-conflict/v1",
+  "stage": "S6-final-verdict-redesign",
+  "note": "D7 修复后补跑（tag=d7fix，run_id=full_B_seed{0,1,2}_d7fix）：stage4 六 epoch 全量 22 batch 记录、三对 cos 非 null。与 S5 full_gradient_conflict.json （修复前，stage4 全 null）并存，不覆盖旧件。",
+  "runs": {
+    "full_B_seed0_d7fix": {
+      "arm": "B",
+      "seed": 0,
+      "status": "done",
+      "per_epoch": [
+        {
+          "epoch": 0,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 1,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 2,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 3,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 4,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 5,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 6,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 7,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 8,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.012153654814359139,
+            0.040190321266312494
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0005266552748666568
+          }
+        },
+        {
+          "epoch": 9,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.021941304979422552,
+            0.031196789456192742
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.001107174516867169
+          }
+        },
+        {
+          "epoch": 10,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.0076647131195799875,
+            0.015422158223703842
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.001387348133985969
+          }
+        },
+        {
+          "epoch": 11,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.008084446869113228,
+            0.0181384765363129
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0007943437092101456
+          }
+        },
+        {
+          "epoch": 12,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.008844271154058251,
+            0.013080614364959976
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0019854595289375125
+          }
+        },
+        {
+          "epoch": 13,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.006325950147584081,
+            0.00722962863933803
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0005929953837370373
+          }
+        },
+        {
+          "epoch": 14,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 15,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 16,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 17,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 18,
+          "stage": 4,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            0.006802618835618804,
+            0.020667411291717806,
+            0.025604499128266154
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": 0.0004484804938494397,
+            "cos_e1_e3": -0.001530007631861901,
+            "cos_e2_e3": 0.0005528323560032401
+          }
+        },
+        {
+          "epoch": 19,
+          "stage": 4,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            0.0050718842328272085,
+            0.008043341208990156,
+            0.02287843036571179
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": 0.0020657645443200386,
+            "cos_e1_e3": -0.002356055697666968,
+            "cos_e2_e3": -0.00043103328822656874
+          }
+        }
+      ]
+    },
+    "full_B_seed1_d7fix": {
+      "arm": "B",
+      "seed": 1,
+      "status": "done",
+      "per_epoch": [
+        {
+          "epoch": 0,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 1,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 2,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 3,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 4,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 5,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 6,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 7,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 8,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.013257960640740666,
+            0.09796750079840422
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": -0.0012282443772578104
+          }
+        },
+        {
+          "epoch": 9,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.01715429115574807,
+            0.03809114118021997
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": -0.00016654579799664631
+          }
+        },
+        {
+          "epoch": 10,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.01004056708717888,
+            0.024975040906362912
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0010765965539163021
+          }
+        },
+        {
+          "epoch": 11,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.015337504647587511,
+            0.03966554139994762
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.000669179914852562
+          }
+        },
+        {
+          "epoch": 12,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.011019997235218232,
+            0.03431611353616146
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0007195540740874342
+          }
+        },
+        {
+          "epoch": 13,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.008268285473935644,
+            0.026839086680080403
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0022292766529558735
+          }
+        },
+        {
+          "epoch": 14,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 15,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 16,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 17,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 18,
+          "stage": 4,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            0.0026864100357422353,
+            0.010652406538032334,
+            0.03424662050515921
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": 0.0009656139723533256,
+            "cos_e1_e3": -0.0013181215518588115,
+            "cos_e2_e3": 0.0013667832059912723
+          }
+        },
+        {
+          "epoch": 19,
+          "stage": 4,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            0.0017098897964884104,
+            0.007805762706663121,
+            0.01426761406103403
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": -0.00030036804343002257,
+            "cos_e1_e3": -0.004198855053718117,
+            "cos_e2_e3": 0.0029721072404010392
+          }
+        }
+      ]
+    },
+    "full_B_seed2_d7fix": {
+      "arm": "B",
+      "seed": 2,
+      "status": "done",
+      "per_epoch": [
+        {
+          "epoch": 0,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 1,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 2,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 3,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 4,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 5,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 6,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 7,
+          "stage": 1,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 8,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.018109058495610952,
+            0.048601807560771704
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0007326458263295618
+          }
+        },
+        {
+          "epoch": 9,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.03929839793338694,
+            0.030736580237068913
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": -0.0016757184639573097
+          }
+        },
+        {
+          "epoch": 10,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.015405134160325608,
+            0.027623335090042514
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.0002097009286940606
+          }
+        },
+        {
+          "epoch": 11,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.02262594990315847,
+            0.02691557586447082
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": -0.0005541668393892575
+          }
+        },
+        {
+          "epoch": 12,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.015377064505380324,
+            0.07650176181711933
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": -0.00028606117782394654
+          }
+        },
+        {
+          "epoch": 13,
+          "stage": 2,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            null,
+            0.006511454824993218,
+            0.01542325191919438
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": null,
+            "cos_e1_e3": null,
+            "cos_e2_e3": 0.001039263213235906
+          }
+        },
+        {
+          "epoch": 14,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 15,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 16,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 17,
+          "stage": 3,
+          "grad_logged_batches": 0,
+          "expert_grad_norm_mean": null,
+          "grad_cos_mean": null
+        },
+        {
+          "epoch": 18,
+          "stage": 4,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            0.006158855955370448,
+            0.006690819700121541,
+            0.01967226637696678
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": 0.0016633206012722274,
+            "cos_e1_e3": -6.910413966662335e-05,
+            "cos_e2_e3": -0.00022665151746795428
+          }
+        },
+        {
+          "epoch": 19,
+          "stage": 4,
+          "grad_logged_batches": 22,
+          "expert_grad_norm_mean": [
+            0.0037180712388362736,
+            0.00422550774502187,
+            0.018716439689424904
+          ],
+          "grad_cos_mean": {
+            "cos_e1_e2": 0.0037803283617408438,
+            "cos_e1_e3": 0.00042303022291889647,
+            "cos_e2_e3": 2.6404935686679725e-05
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+ "schema": "data-check/v1",
+ "stage": "S2-gate-checks",
+ "purpose": "数据获取实测（Moor 2023 主 / PhysioNet 2019 退；两败→F2）",
+ "sections": {
+  "M1_moor_2023_acquisition": {
+   "hypothesis": "Moor 2023 harmonized 集公开可得（原论文数据）；实测获取方式",
+   "probes": {
+    "paper": {
+     "title": "Predicting sepsis using deep learning across international sites: a retrospective development and validation study.",
+     "pmcid": "PMC10425671",
+     "isOpenAccess": "Y",
+     "pubYear": "2023"
+    },
+    "data_availability_snippet": "Data sharing statement</title><p id=\"p0160\">All the raw data used in this manuscript is publicly available for accredited researchers. MIMIC-III, eICU, and HiRID are available via Physionet.<xref rid=\"bib37\" ref-type=\"bibr\"><sup>37</sup></xref> Data from the AUMC database is available via the website of Amsterdam Medical Data Science. The data loading was performed using the “ricu” R-package.<xref rid=\"bib38\" ref-type=\"bibr\"><sup>38</sup></xref> All code used for extracting, cleaning, filtering and modelling will be made available immediately upon publication, ensuring end-to-end reproducibility of all results presented.</p></sec><sec sec-type=\"COI-statement\"><title>Declaration of interests</title><p id=\"p0165\">Karsten Borgwardt has a patent application submitted for a biomarker for Long COVID, with no thematic link to the current manuscript. The authors declare no competing interests.</p></sec></body><back><ref-list id=\"cebib0010\"><title>References</title><ref id=\"bib1\"><label>1</labe",
+    "availability_keyword_hits": {
+     "data availability": 0,
+     "credential": 0,
+     "MIMIC": 6,
+     "eICU": 10,
+     "Amsterdam": 3,
+     "HIRID": 5,
+     "harmoni": 16,
+     "zenodo": 0,
+     "figshare": 0,
+     "github": 0
+    },
+    "github_links_in_paper": [],
+    "zenodo_figshare_links": [],
+    "fulltext_bytes": 98108,
+    "github_repo_BorgwardtLab/sepsis": "404",
+    "github_repo_ratschlab/sepsis": "404",
+    "github_repo_mims-harvard/sepsis": "404"
+   }
+  },
+  "P1_physionet_structure": {
+   "trainA_dir_listing": {
+    "source": "archived_fetch_2026-10-27T03:2x",
+    "path": "results\\_data_probe\\training_dir_listing.html",
+    "content": "<html>\n<head><title>Index of /protected/published-projects/challenge-2019/1.0.0/training/</title></head>\n<body>\n<h1>Index of /protected/published-projects/challenge-2019/1.0.0/training/</h1><hr><pre><a href=\"../\">../</a>\n<a href=\"training_setA/\">training_setA/</a>                                     31-Mar-2019 20:56                   -\n<a href=\"training_setB/\">training_setB/</a>                                     01-Apr-2019 15:04                   -\n</pre><hr></body>\n</html>\n"
+   },
+   "setA_count_probe": {
+    "max_index": 20643,
+    "count_contiguous": 20643,
+    "verdict": "measured_live"
+   },
+   "setB_count_probe": {
+    "error": "p000001.psv 不可达",
+    "probe": "404"
+   },
+   "single_file_probe": {
+    "http_code": "200",
+    "size": 9062,
+    "type": "text/plain;",
+    "attempt": 1
+   }
+  },
+  "P2_sample_download_and_stats": {
+   "n_requested": 400,
+   "n_downloaded_ok": 394,
+   "n_failed": 6,
+   "n_files_in_sample_dir": 792,
+   "n_skipped_corrupt": 6,
+   "skipped_files": [
+    "sample_setA\\p020044.psv",
+    "sample_setA\\p020095.psv",
+    "sample_setA\\p020146.psv",
+    "sample_setA\\p020197.psv",
+    "sample_setA\\p020248.psv",
+    "sample_setA\\p020299.psv"
+   ],
+   "download_sec": 64.7,
+   "sample_dir": "experiments\\data\\sample_setA",
+   "stats": {
+    "n_patients": 786,
+    "n_septic_patients": 59,
+    "septic_patient_rate": 0.0751,
+    "total_hours": 29365,
+    "positive_hours": 557,
+    "hourly_label_rate": 0.01897,
+    "seq_len": {
+     "min": 8,
+     "p25": 25.0,
+     "median": 39.0,
+     "p75": 47.0,
+     "p95": 58.0,
+     "max": 72,
+     "mean": 37.36
+    },
+    "raw_seq_len_pre_truncation": {
+     "min": 6,
+     "p25": 24.0,
+     "median": 39.0,
+     "p75": 47.0,
+     "p95": 58.0,
+     "max": 243,
+     "mean": 38.71,
+     "n_over_72h": 19
+    },
+    "raw_missing_cell_rate_72h_window": 0.7965
+   },
+   "note": "样本=setA 均匀采样；序列长度分布/标签率为样本实测（live）。全量例数以结构探针（边界序号探针）+ 挑战论文发表数交叉核对。"
+  },
+  "P1b_setB_naming_correction": {
+   "issue": "data_check P1 的 setB 探针假设命名 p000001 起，实测 setB 文件命名为 p100001 起（与 setA 全局连号），故 setB_count_probe 报「p000001.psv 不可达」=探针命名假设错误，非数据不可达",
+   "correction_evidence": {
+    "setB_listing_archived": "results/_data_probe/setB_listing_head.html（首页即 p100001.psv 起）",
+    "boundary_probes_live": {
+     "p099999": "404",
+     "p100001": "200（listing）",
+     "p105000": "206",
+     "p110000": "206",
+     "p115000": "206",
+     "p119999": "206",
+     "p120000": "206",
+     "p120001": "404",
+     "p122000": "404"
+    },
+    "verdict": "setB = p100001..p120000 共 20,000 文件（边界实测）"
+   }
+  }
+ },
+ "env": {
+  "python": "3.11.9",
+  "ran_at": "2026-10-27T04:38:15+0800"
+ },
+ "total_sec": 350.4
+}

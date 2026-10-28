@@ -1,0 +1,571 @@
+{
+  "schema": "d7fix-recompute/v1",
+  "stage": "S6-final-verdict-redesign",
+  "generated_at": "2026-10-29T00:59:15+0800",
+  "method": "仅标准库；读 full_runs 原始 JSON（新 tag full_B_seed*_d7fix 与 S5 full_A/B_seed*）+ full_gradient_conflict.json；std=ddof=1；不训练、不改写 S5 产物。",
+  "source_files": [
+    "results/full_runs/full_B_seed{0,1,2}_d7fix.json",
+    "results/full_runs/full_B_seed{0,1,2}.json",
+    "results/full_runs/full_A_seed{0,1,2}.json",
+    "results/full_gradient_conflict.json"
+  ],
+  "telemetry_pass_conditions": {
+    "per_seed": {
+      "seed0": {
+        "status_done": true,
+        "n_epochs_20": true,
+        "stage4_epochs_2": true,
+        "stage4_epochs_are_18_19": true,
+        "stage4_logged_22_each": true,
+        "stage4_logged_eq_n_batches": true,
+        "stage4_three_cos_nonnull_finite": true,
+        "stage4_expert_grad_norms_3": true,
+        "stage2_6_epochs_logged_22": true,
+        "stage2_cos_e2_e3_nonnull": true,
+        "stage13_not_logged": true,
+        "stage4_detail": [
+          {
+            "epoch": 18,
+            "grad_logged_batches": 22,
+            "n_batches": 22,
+            "grad_cos_mean": {
+              "cos_e1_e2": 0.0004484804938494397,
+              "cos_e1_e3": -0.001530007631861901,
+              "cos_e2_e3": 0.0005528323560032401
+            }
+          },
+          {
+            "epoch": 19,
+            "grad_logged_batches": 22,
+            "n_batches": 22,
+            "grad_cos_mean": {
+              "cos_e1_e2": 0.0020657645443200386,
+              "cos_e1_e3": -0.002356055697666968,
+              "cos_e2_e3": -0.00043103328822656874
+            }
+          }
+        ]
+      },
+      "seed1": {
+        "status_done": true,
+        "n_epochs_20": true,
+        "stage4_epochs_2": true,
+        "stage4_epochs_are_18_19": true,
+        "stage4_logged_22_each": true,
+        "stage4_logged_eq_n_batches": true,
+        "stage4_three_cos_nonnull_finite": true,
+        "stage4_expert_grad_norms_3": true,
+        "stage2_6_epochs_logged_22": true,
+        "stage2_cos_e2_e3_nonnull": true,
+        "stage13_not_logged": true,
+        "stage4_detail": [
+          {
+            "epoch": 18,
+            "grad_logged_batches": 22,
+            "n_batches": 22,
+            "grad_cos_mean": {
+              "cos_e1_e2": 0.0009656139723533256,
+              "cos_e1_e3": -0.0013181215518588115,
+              "cos_e2_e3": 0.0013667832059912723
+            }
+          },
+          {
+            "epoch": 19,
+            "grad_logged_batches": 22,
+            "n_batches": 22,
+            "grad_cos_mean": {
+              "cos_e1_e2": -0.00030036804343002257,
+              "cos_e1_e3": -0.004198855053718117,
+              "cos_e2_e3": 0.0029721072404010392
+            }
+          }
+        ]
+      },
+      "seed2": {
+        "status_done": true,
+        "n_epochs_20": true,
+        "stage4_epochs_2": true,
+        "stage4_epochs_are_18_19": true,
+        "stage4_logged_22_each": true,
+        "stage4_logged_eq_n_batches": true,
+        "stage4_three_cos_nonnull_finite": true,
+        "stage4_expert_grad_norms_3": true,
+        "stage2_6_epochs_logged_22": true,
+        "stage2_cos_e2_e3_nonnull": true,
+        "stage13_not_logged": true,
+        "stage4_detail": [
+          {
+            "epoch": 18,
+            "grad_logged_batches": 22,
+            "n_batches": 22,
+            "grad_cos_mean": {
+              "cos_e1_e2": 0.0016633206012722274,
+              "cos_e1_e3": -6.910413966662335e-05,
+              "cos_e2_e3": -0.00022665151746795428
+            }
+          },
+          {
+            "epoch": 19,
+            "grad_logged_batches": 22,
+            "n_batches": 22,
+            "grad_cos_mean": {
+              "cos_e1_e2": 0.0037803283617408438,
+              "cos_e1_e3": 0.00042303022291889647,
+              "cos_e2_e3": 2.6404935686679725e-05
+            }
+          }
+        ]
+      }
+    },
+    "all_pass": true
+  },
+  "config_invariance_d10": {
+    "per_seed": {
+      "seed0": {
+        "config_equal": true,
+        "data_meta_equal": true,
+        "config": {
+          "n_patients": 2000,
+          "epochs": 20,
+          "lr": 0.001,
+          "batch": 64,
+          "hidden": 1500,
+          "taus": [
+            1.0,
+            10.0,
+            100.0
+          ],
+          "gate_hidden": 64,
+          "seq_len": 72,
+          "stage_schedule": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "log_grad_every": 1
+        }
+      },
+      "seed1": {
+        "config_equal": true,
+        "data_meta_equal": true,
+        "config": {
+          "n_patients": 2000,
+          "epochs": 20,
+          "lr": 0.001,
+          "batch": 64,
+          "hidden": 1500,
+          "taus": [
+            1.0,
+            10.0,
+            100.0
+          ],
+          "gate_hidden": 64,
+          "seq_len": 72,
+          "stage_schedule": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "log_grad_every": 1
+        }
+      },
+      "seed2": {
+        "config_equal": true,
+        "data_meta_equal": true,
+        "config": {
+          "n_patients": 2000,
+          "epochs": 20,
+          "lr": 0.001,
+          "batch": 64,
+          "hidden": 1500,
+          "taus": [
+            1.0,
+            10.0,
+            100.0
+          ],
+          "gate_hidden": 64,
+          "seq_len": 72,
+          "stage_schedule": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "log_grad_every": 1
+        }
+      }
+    },
+    "all_equal": true
+  },
+  "performance_alignment_d7fix_vs_s5": {
+    "per_seed": {
+      "seed0": {
+        "final_val.val_admission.auroc": {
+          "d7fix": 0.7661431064572426,
+          "s5": 0.7661431064572426,
+          "abs_diff": 0.0
+        },
+        "final_val.val_admission.auprc": {
+          "d7fix": 0.12656576976740194,
+          "s5": 0.12656576976740194,
+          "abs_diff": 0.0
+        },
+        "final_val.val_hourly.auroc": {
+          "d7fix": 0.7119942535017724,
+          "s5": 0.7119942535017724,
+          "abs_diff": 0.0
+        },
+        "final_val.val_hourly.auprc": {
+          "d7fix": 0.02550535004406482,
+          "s5": 0.02550535004406482,
+          "abs_diff": 0.0
+        },
+        "test.admission.auroc": {
+          "d7fix": 0.8160535117056856,
+          "s5": 0.8160535117056856,
+          "abs_diff": 0.0
+        },
+        "test.admission.auprc": {
+          "d7fix": 0.18527992826678483,
+          "s5": 0.18527992826678483,
+          "abs_diff": 0.0
+        },
+        "test.hourly.auroc": {
+          "d7fix": 0.7701842414012178,
+          "s5": 0.7701842414012178,
+          "abs_diff": 0.0
+        },
+        "test.hourly.auprc": {
+          "d7fix": 0.05255920562544217,
+          "s5": 0.05255920562544217,
+          "abs_diff": 0.0
+        }
+      },
+      "seed1": {
+        "final_val.val_admission.auroc": {
+          "d7fix": 0.7696335078534031,
+          "s5": 0.7696335078534031,
+          "abs_diff": 0.0
+        },
+        "final_val.val_admission.auprc": {
+          "d7fix": 0.13701241302861022,
+          "s5": 0.13701241302861022,
+          "abs_diff": 0.0
+        },
+        "final_val.val_hourly.auroc": {
+          "d7fix": 0.7018223270194724,
+          "s5": 0.7018223270194724,
+          "abs_diff": 0.0
+        },
+        "final_val.val_hourly.auprc": {
+          "d7fix": 0.025387937065864,
+          "s5": 0.025387937065864,
+          "abs_diff": 0.0
+        },
+        "test.admission.auroc": {
+          "d7fix": 0.758736016607081,
+          "s5": 0.758736016607081,
+          "abs_diff": 0.0
+        },
+        "test.admission.auprc": {
+          "d7fix": 0.14115640262602833,
+          "s5": 0.14115640262602833,
+          "abs_diff": 0.0
+        },
+        "test.hourly.auroc": {
+          "d7fix": 0.7605243591586633,
+          "s5": 0.7605243591586633,
+          "abs_diff": 0.0
+        },
+        "test.hourly.auprc": {
+          "d7fix": 0.043868972272772776,
+          "s5": 0.043868972272772776,
+          "abs_diff": 0.0
+        }
+      },
+      "seed2": {
+        "final_val.val_admission.auroc": {
+          "d7fix": 0.7079697498545666,
+          "s5": 0.7079697498545666,
+          "abs_diff": 0.0
+        },
+        "final_val.val_admission.auprc": {
+          "d7fix": 0.09818338522905488,
+          "s5": 0.09818338522905488,
+          "abs_diff": 0.0
+        },
+        "final_val.val_hourly.auroc": {
+          "d7fix": 0.6334577366917035,
+          "s5": 0.6334577366917035,
+          "abs_diff": 0.0
+        },
+        "final_val.val_hourly.auprc": {
+          "d7fix": 0.016951578154994644,
+          "s5": 0.016951578154994644,
+          "abs_diff": 0.0
+        },
+        "test.admission.auroc": {
+          "d7fix": 0.7845692538346211,
+          "s5": 0.7845692538346211,
+          "abs_diff": 0.0
+        },
+        "test.admission.auprc": {
+          "d7fix": 0.17000182741442874,
+          "s5": 0.17000182741442874,
+          "abs_diff": 0.0
+        },
+        "test.hourly.auroc": {
+          "d7fix": 0.7582503636445141,
+          "s5": 0.7582503636445141,
+          "abs_diff": 0.0
+        },
+        "test.hourly.auprc": {
+          "d7fix": 0.04165231376203035,
+          "s5": 0.04165231376203035,
+          "abs_diff": 0.0
+        }
+      }
+    },
+    "max_abs_diff": 0.0
+  },
+  "d7_before_after_stage4": {
+    "before_s5": {
+      "stage4_epochs": 6,
+      "stage4_logged_batches": 0,
+      "stage4_defined_cosines": 0
+    },
+    "after_d7fix": {
+      "stage4_epochs": 6,
+      "stage4_logged_batches": 132,
+      "stage4_defined_cosines": 18
+    },
+    "note": "修复前 stage4 六 epoch 遥测全缺失（S5 根因：组名前缀计数 0）；修复后 6×22=132 个 logged batch、6×3=18 条定义良好余弦。"
+  },
+  "h2a_adjudication": {
+    "primary_A_full_vs_B_stage4": {
+      "cos_e1_e2": {
+        "A_mean_per_seed": [
+          -0.007464129786140719,
+          0.001943645123686689,
+          -0.004772375655672725
+        ],
+        "B_stage4_mean_per_seed": [
+          0.0012571225190847392,
+          0.0003326229644616515,
+          0.0027218244815065355
+        ],
+        "paired_diff_A_minus_Bstage4_per_seed": [
+          -0.008721252305225458,
+          0.0016110221592250376,
+          -0.0074942001371792605
+        ],
+        "paired_diff_mean_std": {
+          "mean": -0.00486814342772656,
+          "std": 0.005644564135797387,
+          "n": 3
+        },
+        "n_seeds_A_more_negative": 2
+      },
+      "cos_e1_e3": {
+        "A_mean_per_seed": [
+          0.0001967862843726339,
+          0.0025062032783766466,
+          -0.0036228703015777604
+        ],
+        "B_stage4_mean_per_seed": [
+          -0.0019430316647644345,
+          -0.0027584883027884644,
+          0.00017696304162613654
+        ],
+        "paired_diff_A_minus_Bstage4_per_seed": [
+          0.0021398179491370684,
+          0.005264691581165111,
+          -0.003799833343203897
+        ],
+        "paired_diff_mean_std": {
+          "mean": 0.0012015587290327607,
+          "std": 0.004604525035137696,
+          "n": 3
+        },
+        "n_seeds_A_more_negative": 1
+      },
+      "cos_e2_e3": {
+        "A_mean_per_seed": [
+          -0.0008968388722926399,
+          -0.0049104680399481865,
+          0.0022585833287600754
+        ],
+        "B_stage4_mean_per_seed": [
+          6.089953388833567e-05,
+          0.002169445223196156,
+          -0.00010012329089063728
+        ],
+        "paired_diff_A_minus_Bstage4_per_seed": [
+          -0.0009577384061809755,
+          -0.007079913263144342,
+          0.0023587066196507126
+        ],
+        "paired_diff_mean_std": {
+          "mean": -0.0018929816832248681,
+          "std": 0.004788308293480629,
+          "n": 3
+        },
+        "n_seeds_A_more_negative": 2
+      }
+    },
+    "robustness_A_last2_vs_B_stage4": {
+      "cos_e1_e2": {
+        "paired_diff_A_last2_minus_Bstage4_mean_std": {
+          "mean": -0.004177608991140557,
+          "std": 0.006515523828011694,
+          "n": 3
+        }
+      },
+      "cos_e1_e3": {
+        "paired_diff_A_last2_minus_Bstage4_mean_std": {
+          "mean": 0.0003133948314164381,
+          "std": 0.00574376325423803,
+          "n": 3
+        }
+      },
+      "cos_e2_e3": {
+        "paired_diff_A_last2_minus_Bstage4_mean_std": {
+          "mean": -0.0023862536643057615,
+          "std": 0.005666221162970101,
+          "n": 3
+        }
+      }
+    },
+    "reference_B_stage2_s5": {
+      "cos_e1_e2": {
+        "note": "stage2 无定义（专家未联合可训）"
+      },
+      "cos_e1_e3": {
+        "note": "stage2 无定义（专家未联合可训）"
+      },
+      "cos_e2_e3": {
+        "mean": 0.0005088587252917345,
+        "std": 0.001005284102839146,
+        "n": 18
+      }
+    },
+    "pooled_epoch_level": {
+      "A_full_60_epochs": {
+        "cos_e1_e2": {
+          "mean": -0.003430953439375584,
+          "std": 0.005248208563473544,
+          "n": 60,
+          "min": -0.0170179066745649,
+          "max": 0.005277333083954131,
+          "max_abs": 0.0170179066745649
+        },
+        "cos_e1_e3": {
+          "mean": -0.0003066269129428266,
+          "std": 0.003132340423938819,
+          "n": 60,
+          "min": -0.008609467834255403,
+          "max": 0.006428694738794796,
+          "max_abs": 0.008609467834255403
+        },
+        "cos_e2_e3": {
+          "mean": -0.0011829078611602505,
+          "std": 0.0034797967702519185,
+          "n": 60,
+          "min": -0.008010848446495154,
+          "max": 0.006333104543790052,
+          "max_abs": 0.008010848446495154
+        }
+      },
+      "B_stage4_6_epochs": {
+        "cos_e1_e2": {
+          "mean": 0.0014371899883509752,
+          "std": 0.0014251720443898914,
+          "n": 6,
+          "min": -0.00030036804343002257,
+          "max": 0.0037803283617408438,
+          "max_abs": 0.0037803283617408438
+        },
+        "cos_e1_e3": {
+          "mean": -0.0015081856419755875,
+          "std": 0.0016610681117478286,
+          "n": 6,
+          "min": -0.004198855053718117,
+          "max": 0.00042303022291889647,
+          "max_abs": 0.004198855053718117
+        },
+        "cos_e2_e3": {
+          "mean": 0.0007100738220646181,
+          "std": 0.0012821677132370771,
+          "n": 6,
+          "min": -0.00043103328822656874,
+          "max": 0.0029721072404010392,
+          "max_abs": 0.0029721072404010392
+        }
+      },
+      "note": "A 臂每 epoch 值为 22 个 batch 均值的 epoch 级 cos；B stage4 同口径。max|cos| 量级对照=S5 曾报 A 0.017018 vs B-stage2 0.002229（不同阶段/对照，不作替代）。"
+    },
+    "direction_summary": {
+      "cells_A_more_negative": "5/9（3 种子×3 专家对）",
+      "all_three_pairs_mean_diff_negative": false,
+      "preregistered_direction": "design §二 H2(a)：A 臂训练期专家对梯度余弦比 B 臂阶段四校准期更负（A−B-stage4<0）"
+    }
+  },
+  "verdict": {
+    "telemetry_complete": true,
+    "h2a_direction_supported": false,
+    "h2a": "inconclusive",
+    "h2_overall": "inconclusive / not established（H1 已 falsified，H2 前提不成立；H2(b) 读数 +0.107033±0.001550 作为机制事实记录，不提升为 H2 支持）",
+    "h2a_note": "遥测已补齐但 A vs B-stage4 不呈预注册「A 更负」方向 → H2(a) 不支持；按预注册边界记 inconclusive，不把缺失/无冲突当零值。",
+    "h1_gates": "不重开（S6 已终判 falsified；本单元只补 H2(a) 机制证据）"
+  }
+}

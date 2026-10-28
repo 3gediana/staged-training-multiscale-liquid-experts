@@ -1,0 +1,11 @@
+# 数据语料与大体量产物不入库（可经 experiments/download_physionet2019.py 复现）
+experiments/data/
+experiments/ckpt/
+results/_*_data_*.npz
+*.npz
+*.pt
+*.pth
+*.ckpt
+__pycache__/
+*.pyc
+# 复跑产生的时间戳刷新（数值不变；_d7fix_recompute.json 本体仍入库供对照）
