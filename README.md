@@ -3,7 +3,7 @@
 **一句话**：针对论文 arXiv:2606.12240v1 §4.1 点名的缺口——「多个时间尺度专家联合训练会互相干扰，作者建议 hierarchical/alternating 解耦训练但未验证」——我们在真实败血症数据（PhysioNet/CinC 2019）上做了预注册的受控单变量实验：分阶段训练臂 B vs 论文式联合训练臂 A。**主假设 H1 被证伪（falsified）**：分阶段臂在三项预注册门线上全部未过；机制假设 H2 维持 inconclusive。本仓库完整记录问题、做法、复现入口与全部读数，**不把负结果包装成支持性结论**。
 
 - 结论口径：**H1 = falsified**；**H2(a) = inconclusive（遥测补齐后仍不呈预注册方向，记「不支持」）**；**H2(b) = 机制事实记录（不提升为 H2 支持）**；**H2 overall = inconclusive / not established**。
-- 本仓库为本地复现仓库，**未做任何公开推送**（是否推送、以何种许可证推送，需用户明确授权后另行决定）。
+- 本仓库已公开推送至 GitHub：https://github.com/3gediana/staged-training-multiscale-liquid-experts （用户 2026-10-29 授权「全部公开、立项即公开」；数据为公开 PhysioNet/CinC 2019，无隐私、无个人信息、无 secrets）。
 - 每个数字都能回到 `results/` 下的原始文件；复现入口 = `results/_s6_recompute.py`（H1）与 `results/_d7fix_recompute.py`（D7/H2(a)），一条命令见下文「怎么跑」。
 
 ---
@@ -182,6 +182,6 @@ S5 曾因遥测 bug 缺证（stage4 六个 epoch 日志全空），S6-final-verd
 
 ## 9. 推送状态
 
-- 本仓库只在本地 git（无 remote、无公开推送）。是否公开、用什么许可证，需用户明确授权后另行处理。
+- 本仓库已公开：https://github.com/3gediana/staged-training-multiscale-liquid-experts （用户 2026-10-29 授权「全部公开、立项即公开」；本地 git 与远端同步）。未单独声明 LICENSE（默认保留所有权利；后续可补）。
 - 数据：PhysioNet/CinC 2019 公开数据（需遵守其使用条款）；模型代码为按论文自实现（ncps 0.0.2 CfC 胞体）。
-- 研究过程全记录（判读、决策、复盘）在研究仓库内，不在本公开候选仓库范围内。
+- 研究过程全记录（判读、决策、复盘）在研究仓库内，不在本公开仓库范围内。
